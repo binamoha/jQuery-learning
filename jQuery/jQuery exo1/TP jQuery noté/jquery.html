@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="./style.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<script>
+
+$(document).ready(function(){
+        // alert($("#test").text());
+
+
+        $("#MyBtnFirst").click(function(){
+            alert($(".MyTitle").first().text());
+        });
+
+        $("#MyBtnLast").click(function(){
+            alert($(".MyTitle").last().text());
+        });
+    });
+
+        $(".h3btn").click(function(){
+            alert($("h3").text());
+        });
+
+        
+        $("#hide").click(function(){
+            $('#MyImg').hide('slow');
+            $('#hide').hide('slow');
+            $('#show').show('slow');
+        });
+
+        $("#show").click(function(){
+            $('#MyImg').show('slow');
+            $('#show').hide('slow');
+            $('#hide').show('slow');
+        });
+        $("#toggle").click(function(){
+            $('#MyImg2').toggle('slow');
+           
+        });
+        
+$(document).ready(function(){
+        // alert($("#test").text());
+
+
+        $("#MyBtnFirst").click(function(){
+            alert($(".MyTitle").first().text());
+        });
+
+        $("#MyBtnLast").click(function(){
+            alert($(".MyTitle").last().text());
+        });
+
+
+        $(".h3btn").click(function(){
+            alert($("h3").text());
+        });
+
+        
+        $("#hide").click(function(){
+            $('#MyImg').hide('slow');
+            $('#hide').hide('slow');
+            $('#show').show('slow');
+        });
+
+        $("#show").click(function(){
+            $('#MyImg').show('slow');
+            $('#show').hide('slow');
+            $('#hide').show('slow');
+        });
+
+
+
+        $("#toggle").click(function(){
+            $('#MyImg2').toggle('slow');
+           
+        });
+
+        
+        $("#changeColor").click(function(){
+            $('#paraph').css("color", "red");
+           
+        });
+
+        $("#getName").click(function () {
+                var MyName = $("#name").val();
+                alert("Bonjour : "+MyName);
+            });
+
+
+            
+        $("#getnumber").click(function () {
+
+                var number1 = parseInt( $("#number1").val());
+                var number2 = parseInt( $("#number2").val());
+                var total = number1 + number2;
+                
+                $("#total").val(total);
+            }); 
+
+
+            // $("#getMyName").click(function () {
+            //     var MyName = $("#MyName").val();
+
+            //     $("#ici").remove();
+              
+            //     $("#here").append("<span id='ici'>"+MyName+"</span>");
+
+                
+            // });
+        
+
+            $("#getnumberFirst").click(function () {
+
+            var number1 = parseInt( $("#number1").val());
+            var number2 = parseInt( $("#number2").val());
+            var number3 = parseInt( $("#number3").val());
+            
+            $("#ici").remove();
+        
+            var total = number1 + (number2 + number3);
+
+            $("#total").val(total);
+            }); 
+
+            $("#getnumberSecond").click(function () {
+
+            var Produit = parseInt( $("#produit").val());
+            var Prix= parseInt( $("#prix").val());
+            var Quantite = parseInt( $("#quantite").val());
+            var PrixTotal = parseInt( $("#prixtotal").val());
+            $("#ici").remove();
+
+            var total = number1 + (number2 + number3);
+
+            $("#total").val(total);
+});  
+
+
+
+});
+
+
+</script>
+
+
+</head>
+
+
+<h1>jquery</h1>
+
+<p id="test">Test ici Jquery</p>
+
+<h1 class="MyTitle" >Titre First! </h1>
+<h1 class="MyTitle" >Titre Last ! </h1>
+
+<h3>Titre H3</h3>
+
+
+<button id="MyBtnFirst">Ici First</button>
+
+<button id="MyBtnLast">Ici Last</button>
+
+
+<button class="h3btn">test</button>
+
+
+
+<h1>=============================================================================================================================================
+</h1>
+
+
+<img id="MyImg" src="./images/Amy Lea.jpeg" style="width: 30%;">
+
+
+
+<button id="show">Show</button>
+
+<button id="hide">Hide</button>
+
+<h1>=============================================================================================================================================
+</h1>
+
+<img id="MyImg2" src="./Images/ristorante-rivalago_vf026YRm.jpg" style="width: 30%;">
+<img id="MyImg2" src="./Images/ristorante-rivalago_vf026YRm.jpg" style="width: 30%;">
+<img id="MyImg2" src="./Images/ristorante-rivalago_vf026YRm.jpg" style="width: 30%;">
+
+<button id="toggle">Toggle</button>
+
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae commodi sunt voluptatem deleniti ipsam, quaerat ex dolores accusantium sapiente illum ullam error enim dicta tempora culpa voluptate. Maiores, vitae perferendis.</p>
+
+<h1>jquery</h1>
+
+
+
+
+<p id="paraph">
+    is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+
+</p>
+
+<button id="changeColor" >Change Color rouge</button>
+ <br><br><br><br>
+
+
+<input type="number" id="number1" placeholder="number1">
+
+<input type="number" id="number2" placeholder="number2">
+
+<input type="number" id="total" placeholder="total">
+
+
+<button id="getnumber1" >Valider </button><br><br><br><br><br>
+
+
+
+
+
+<input type="text" id="MyName" placeholder="MyName">
+
+<p id="here"><span id="ici"></span></p>
+
+
+<button id="getMyName" >Valider </button><br><br><br><br>
+
+<div>
+
+<input class="chemises" type="text" id="Produit" placeholder="Chemises">
+<input type="number" id="number" placeholder="prix"><br><br>
+
+<input id="Pantalon" type="text" id="Produit" placeholder="Pantalon">
+<input type="number" id="number" placeholder="prix"><br><br>
+
+<input id="Veste" type="text" id="Produit" placeholder="Veste">
+<input type="number" id="number" placeholder="prix"><br><br>
+
+<button id="getnumberFirst" >calculer</button><br><br><br>
+
+Total <input type="number" id="total" placeholder=""><br><br><br>
+<br>
+
+</div>
+<hr><hr><br><br><br>
+
+
+<div>
+
+    <input type="text" id="Produit" placeholder="Produit">
+    <input type="number" id="number" placeholder="prix">
+    <input type="number" id="number" placeholder="quantite">
+    <input type="number" id="number" placeholder="prixtotal"><br><br>
+
+    <input type="text" id="Produit" placeholder="Produit">
+    <input type="number" id="number" placeholder="prix">
+    <input type="number" id="number" placeholder="quantite">
+    <input type="number" id="number" placeholder="prixtotal"><br><br>
+    
+    <input type="text" id="Produit" placeholder="Produit">
+    <input type="number" id="number" placeholder="prix">
+    <input type="number" id="number" placeholder="quantite">
+    <input type="number" id="number" placeholder="prixtotal"><br><br><br>
+    
+    <button id="getnumberSecond" >calculer</button><br><br><br>
+    
+    Total <input type="number" id="total" placeholder="">
+    
+    </div>
+
+
+
+
+</body>
+</html>
